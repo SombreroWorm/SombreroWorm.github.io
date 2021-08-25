@@ -7,7 +7,7 @@ function Check404() {
         real404 = true;
     }
     
-    urlCode = urlCode.substring(urlPrefix.length);
+    urlCode = urlCode.substring(urlPrefix.length - 1);
 
     alert("Url: " + window.location.href + "\n" + 
           "Trimmed: " + urlCode + "\n" + 
