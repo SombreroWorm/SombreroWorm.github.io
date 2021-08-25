@@ -4,7 +4,9 @@ var urlCode = window.location.href;
 function Check404() {
     urlCode = urlCode.substring(urlPrefix.length - 1);
 
-    alert(urlCode);
+    alert("Url: " + window.location.href + "\n" + 
+          "Trimmed: " + urlCode + "\n" + 
+          "Length: " + urlPrefix.length);
 }
 
 document.addEventListener('DOMContentLoaded', Check404, false);
