@@ -4,6 +4,9 @@ function Check404() {
     $.ajax({
         type: 'HEAD',
         url: window.location.href,
+    success: function() {
+        // Page exists
+    },
     error: function() {
             alert("Page " + window.location.href + " does not exist!");
     }
