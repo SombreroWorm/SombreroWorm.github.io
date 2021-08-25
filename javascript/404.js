@@ -1,5 +1,4 @@
 function Check404() {
-    //alert(window.location.href);
     var actual404 = false;
 
     var urlPrefix = "https://sombreroworm.github.io/view/";
@@ -7,7 +6,7 @@ function Check404() {
 
     let urlCode = urlCode.slice(urlPrefix.length - 1);
 
-    alert(urlCode);
+    alert(urlPrefix.length);
 }
 
 document.addEventListener('DOMContentLoaded', Check404, false);
