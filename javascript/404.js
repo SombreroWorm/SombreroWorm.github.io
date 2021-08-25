@@ -1,5 +1,5 @@
 function Check404() {
-    alert(window.location.href);
+    //alert(window.location.href);
     var actual404 = false;
 
     var urlPrefix = "https://sombreroworm.github.io/view/";
