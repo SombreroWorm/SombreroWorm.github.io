@@ -1,6 +1,4 @@
 function Check404() {
-alert("Check404");
-
     $.ajax({
         type: 'HEAD',
         url: window.location.href,
@@ -10,4 +8,6 @@ alert("Check404");
     });
 }
 
-document.addEventListener('DomContentLoaded', Check404, false);
+document.addEventListener('DomContentLoaded', function() {
+    alert("Ready");
+}, false);
