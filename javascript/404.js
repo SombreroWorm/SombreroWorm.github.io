@@ -1,4 +1,6 @@
 function Check404() {
+    alert("Ready");
+
     $.ajax({
         type: 'HEAD',
         url: window.location.href,
