@@ -1,16 +1,11 @@
 function Check404() {
-    alert("Ready");
+    alert(window.location.href);
+    var actual404 = false;
 
-    $.ajax({
-        type: 'HEAD',
-        url: window.location.href,
-    success: function() {
-        // Page exists
-    },
-    error: function() {
-            alert("Page " + window.location.href + " does not exist!");
-    }
-    });
+    var urlPrefix = "sombreroworm.github.io/view/";
+    var urlCode = window.location.href;
+
+    urlCode = urlCode.substring(urlPrefix.length - 1);
 }
 
 document.addEventListener('DOMContentLoaded', Check404, false);
