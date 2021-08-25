@@ -8,4 +8,4 @@ function Check404() {
     });
 }
 
-document.addEventListener('DomContentLoaded', Check404, false);
+document.addEventListener('DOMContentLoaded', Check404, false);
