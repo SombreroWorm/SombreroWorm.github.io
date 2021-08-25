@@ -4,7 +4,7 @@ function Check404() {
     var urlPrefix = "https://sombreroworm.github.io/view/";
     var urlCode = window.location.href;
 
-    let urlCode = urlCode.slice(urlPrefix.length - 1);
+    urlCode = urlCode.slice(urlPrefix.length - 1);
 
     alert(urlPrefix.length);
 }
